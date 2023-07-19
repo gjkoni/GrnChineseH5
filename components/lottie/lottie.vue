@@ -17,7 +17,7 @@
 				loop: false,
 				autoplay: false,
 				prerender: true,
-				path: `static/lottie/p${this.getRandom(1, 20)}.json`
+				path: `/static/lottie/p${this.getRandom(1, 20)}.json`
 			});
 			this.$emit("animCreated", this.anim);
 		},
