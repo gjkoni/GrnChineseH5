@@ -37,7 +37,8 @@
 	},
 	"dependencies": {
 		"cnchar-all": "^3.2.4",
-		"dayjs": "^1.11.9"
+		"dayjs": "^1.11.9",
+		"lottie-web": "^5.12.2"
 	},
 	"devDependencies": {
 		"cnchar-data": "^1.1.0"

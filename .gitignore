@@ -1,5 +1,6 @@
 # Build and Release Folders
 unpackage/
+/cnchar-data/
 
 # Other files and folders
 .DS_Store

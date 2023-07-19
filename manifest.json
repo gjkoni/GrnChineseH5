@@ -1,5 +1,5 @@
 {
-    "name" : "SmartMickyAIGC",
+    "name" : "GrnChineseH5",
     "appid" : "__UNI__1EE8966",
     "description" : "",
     "versionName" : "1.0.1",
@@ -81,7 +81,8 @@
     "locale" : "zh-Hans",
     "h5" : {
         "router" : {
-            "mode" : "hash"
+            "mode" : "hash",
+            "base" : "./"
         }
     }
 }
