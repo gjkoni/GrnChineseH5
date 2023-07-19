@@ -1,0 +1,15 @@
+{
+	"locale.auto": "系统",
+	"locale.en": "English",
+	"locale.zh-hans": "简体中文",
+	"settings.name": "设置",
+	"settings.language": "语言设置",
+	"app.loading":"加载中...",
+	"app.loginExpired":"登录已过期",
+	"unit.minutes":"分钟",
+	"unit.days":"天",
+	"unit.units":"单元",
+	"unit.chapters":"章",
+	"unit.sections":"节",
+	"unit.periods":"课时"
+}

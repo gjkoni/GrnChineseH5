@@ -1,0 +1,45 @@
+{
+	"scripts": {
+		"cnchar-serve": "cnchar-serve 12321",
+		"cnchar-prod": "cnchar-serve-prod"
+	},
+	"uni-app": {
+		"scripts": {
+			"mp-weixin-dev": {
+				"title": "微信小程序:开发环境",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"name": "dev"
+				}
+			},
+			"mp-weixin-prod": {
+				"title": "微信小程序:生产环境",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"name": "prod"
+				}
+			},
+			"h5-dev": {
+				"title": "H5:开发环境",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"name": "dev"
+				}
+			},
+			"h5-prod": {
+				"title": "H5:生产环境",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"name": "prod"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"cnchar-all": "^3.2.4",
+		"dayjs": "^1.11.9"
+	},
+	"devDependencies": {
+		"cnchar-data": "^1.1.0"
+	}
+}

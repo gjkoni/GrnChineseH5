@@ -1,0 +1,53 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": false
+		}
+	}],
+	"subPackages": [{
+		"root": "pages/settings",
+		"pages": [{
+			"path": "language/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "settings",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}]
+	}],
+	// "tabBar": {
+	// 	"color": "#7A7E83",
+	// 	"selectedColor": "#007AFF",
+	// 	"borderStyle": "white",
+	// 	"backgroundColor": "#F8F8F8",
+	// 	"list": [
+			// {
+			// 	"pagePath": "pages/find/find",
+			// 	"text": "%find.home%",
+			// 	"iconPath": "static/tabbar/discovery.png",
+			// 	"selectedIconPath": "static/tabbar/discovery_current.png"
+			// },
+	// 	]
+	// },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

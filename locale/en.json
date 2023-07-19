@@ -1,0 +1,15 @@
+{
+	"locale.auto": "System",
+	"locale.en": "English",
+	"locale.zh-hans": "简体中文",
+	"settings.name": "Settings",
+	"settings.language": "Language settings",
+	"app.loading":"Loading...",
+	"app.loginExpired":"Login expired",
+	"unit.minutes":"min",
+	"unit.days":"days",
+	"unit.units":"units",
+	"unit.chapters":"chapters",
+	"unit.sections":"sections",
+	"unit.periods":"periods"
+}

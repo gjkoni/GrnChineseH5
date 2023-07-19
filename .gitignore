@@ -3,6 +3,7 @@ unpackage/
 
 # Other files and folders
 .DS_Store
+node_modules/
 
 # Executables
 
