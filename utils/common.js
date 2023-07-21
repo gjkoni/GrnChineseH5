@@ -177,3 +177,9 @@ export function algorithm() {
 	var a = new Date().getTime() + abc;
 	return a
 }
+
+export function callApp(actionName, params){
+	try {
+		window.flutter_inappwebview.callHandler(actionName, params);
+	} catch (e) {}
+}

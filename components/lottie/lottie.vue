@@ -1,5 +1,5 @@
 <template>
-	<div ref="bodyAnimation"></div>
+	<div class="lottie-view" ref="bodyAnimation"></div>
 </template>
 
 <script>
@@ -11,13 +11,14 @@
 			};
 		},
 		mounted() {
+			const app = getApp().globalData.env
 			this.anim = lottie.loadAnimation({
 				container: this.$refs.bodyAnimation, // the dom element that will contain the animation
 				renderer: "svg",
 				loop: false,
 				autoplay: false,
 				prerender: true,
-				path: `/static/lottie/p${this.getRandom(1, 20)}.json`
+				path: `${app.lottie_baseurl}/static/lottie/p${this.getRandom(1, 20)}.json`
 			});
 			this.$emit("animCreated", this.anim);
 		},
@@ -30,4 +31,9 @@
 </script>
 
 <style lang="scss" scoped>
+	.lottie-view{
+		width: calc(100% - 40rpx);
+		margin: 0 auto;
+		overflow: hidden;
+	}
 </style>
