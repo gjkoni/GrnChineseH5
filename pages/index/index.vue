@@ -5,6 +5,7 @@
 		<lottie v-if="success" :class="lottieClass" @animCreated="lottieAnimation" />
 	</view>
 </template>
+
 <script setup>
 	import cnchar from 'cnchar-all'
 	import dayjs from 'dayjs'
@@ -62,14 +63,16 @@
 			text.value = queryText !== '' ? queryText : "人"
 		}
 		if (querys.size) {
-			size.value = querys.size
+			console.log(querys.size);
+			size.value = querys.size - 60
 		} else {
 			var querySize = GetQueryString('size')
-			size.value = querySize !== '' ? Number(querySize) : drawScreen.screenWidth / (text.value.length < 5 ?
+			console.log(querySize);
+			size.value = querySize !== '' ? Number(querySize) - 60 : drawScreen.screenWidth / (text.value.length < 5 ?
 				text.value.length : 5)
-			//drawOptions.style.length = Math.floor(size.value)
-			drawOptions.style.length = Math.floor(size.value) - 2 //减去svg的style边框宽度，否则会超出宽度导致换行
+			//drawOptions.style.length = Math.floor(size.value)	
 		}
+		drawOptions.style.length = Math.floor(size.value) - 2 //减去svg的style边框宽度，否则会超出宽度导致换行
 		if (text.value.length === 1) {
 			zindex.value = 999
 			position.value = 'absolute'
@@ -167,11 +170,10 @@
 
 	.container {
 		margin: 0;
-		padding: 0;
+		padding: 30px;
 		width: 100vw;
 		position: relative;
-		box-sizing: border-box;
-		padding: 0;
+		box-sizing: border-box;;
 
 		.tian {
 			width: 100%;
